@@ -14,7 +14,7 @@ resource "random_id" "random_id" {
 
 # Create storage account for boot diagnostics
 resource "azurerm_storage_account" "my_storage_account" {
-  name                     = "Pipeline${random_id.random_id.hex}"
+  name                     = "pipeline${random_id.random_id.hex}"
   location                 = data.azurerm_resource_group.rg.location
   resource_group_name      = data.azurerm_resource_group.rg.name
   account_tier             = "Standard"
