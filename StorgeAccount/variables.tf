@@ -1,11 +1,11 @@
 variable "resource_group_location" {
-  default     = "eastus"
+  default     = "__RGLocation__"
   description = "Location of the resource group."
 }
 
 variable "resource_group_name" {
   description = "Location of the resource group."
-  default     = "AZRG-Training"
+  default     = "__RGName__"
 }
 
 variable "prefix" {
